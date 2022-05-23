@@ -181,4 +181,11 @@ size_screen(w::Int32,h::Int32) = w*h*4
 
 size_palette(n::Int32)::UInt32 = n*4
 
+export init_event, event_pop, event_kind, event_x, event_y, draw_pixel, 
+       draw_rectangle, draw_rectangleb, draw_line, cleanup, clip, 
+       clip_disable, draw_bitmap, draw_char, draw_cstring, event_ascii_low, 
+       event_key, event_mods, event_peek, fullscreen, palette_swap, 
+       present, screen_info, time_sleep, translate, translate_info, 
+       size_screen, size_palette
+
 end # module
